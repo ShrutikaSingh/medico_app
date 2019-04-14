@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "829894726214",
+    "firebase_url": "https://doctoroncall-11c33.firebaseio.com",
+    "project_id": "doctoroncall-11c33",
+    "storage_bucket": "doctoroncall-11c33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829894726214:android:6c23abbccd2f3284",
+        "android_client_info": {
+          "package_name": "com.saloni.doctoroncall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829894726214-aue7svc6kj92l11qmnni2p39c4qig9j2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saloni.doctoroncall",
+            "certificate_hash": "1287b7accf2151396766a84659a2db1866bf5d48"
+          }
+        },
+        {
+          "client_id": "829894726214-8aaehlu5vs78i44fnhsa4h93f477a9s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_gLDNRPtpoc1dK5eyBxn0K4XASlncYRE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829894726214-8aaehlu5vs78i44fnhsa4h93f477a9s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

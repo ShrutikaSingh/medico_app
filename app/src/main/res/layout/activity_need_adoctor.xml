@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".NeedADoctor">
+
+    <ProgressBar
+        android:id="@+id/loadDbProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="2dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Need A Doctor"
+        android:textSize="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorInputSection">
+
+        <TextView
+            android:id="@+id/selectAreaText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:text="Select Area"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/select_area"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectAreaText"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorSpinnerBg" />
+
+        <Button
+            android:id="@+id/btn_find_doctor"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/select_area"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="30dp"
+            android:padding="20dp"
+            android:onClick="findDoctors"
+            android:text="Find Doctor" />
+    </RelativeLayout>
+</RelativeLayout>

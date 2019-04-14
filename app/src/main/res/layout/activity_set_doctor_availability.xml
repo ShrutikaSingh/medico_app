@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_SetAvail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".Doctor.SetDoctorAvailability">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <ProgressBar
+            android:id="@+id/loadDbProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/headingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Set Availability"
+            android:textSize="40dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headingText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorInputSection"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp">
+
+            <TextView
+                android:id="@+id/days_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Select Available Days"
+                android:textColor="#2d2d2d"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/days_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/days_heading"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/check_sun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday"
+                    android:textColor="@color/colorSpinnerBg"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/check_mon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:textColor="@color/colorSpinnerBg"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/check_tue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"
+                    android:textColor="@color/colorSpinnerBg"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/check_wed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"
+                    android:textColor="@color/colorSpinnerBg"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/check_thu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday"
+                    android:textColor="@color/colorSpinnerBg"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/check_fri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:textColor="@color/colorSpinnerBg"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/check_sat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:textColor="@color/colorSpinnerBg"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/time_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/days_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Select Available Timing"
+                android:textColor="#2d2d2d"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/time_layout_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_heading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="From"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/select_time_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorSpinnerBg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/time_layout_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_layout_from"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="To"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/select_time_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorSpinnerBg" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_updateAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_layout_to"
+                android:onClick="updateAvailability"
+                android:layout_marginTop="10dp"
+                android:text="Set Availability" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
